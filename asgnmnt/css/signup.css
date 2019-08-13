@@ -1,0 +1,47 @@
+body{background-image: url("/home/ubuntu/Desktop/lekshmi/asgnmnt/img/blw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    min-height: 30px;
+    padding: 10px 10px;
+
+}
+
+
+.signup{
+    text-align: center;
+    margin: 100px 180px;
+
+}
+#registration{
+    background-color:navy;
+margin: 70px;
+
+    width: 80%;
+   align-content: center;
+    padding: 3px;
+
+}
+#button{
+    width: 320px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+h1{
+    text-align: center;
+    padding: 0px;
+}
+
+#phn{
+
+width: 320px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+#phne{
+    width: 320px;
+    padding: 4px;
+    
+}

@@ -1,0 +1,20 @@
+<html>
+<head>
+
+</head>
+<body>
+    <h2>age greater than 18</h2>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <script>
+        var age=[32,42,7,19]
+        function checkAdult(age){
+            return age >=18;
+        }
+        function myFunction(){
+            document.getElementById("demo").innerHTML=age.filter(checkAdult);
+        }
+        </script>
+</body>
+
+</html>

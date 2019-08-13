@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="application/javascript">
+function loadJSON(){
+    var data_file="https://jsonplaceholder.typicode.com/todos";
+    var http_request=new XMLHttpRequest();
+    http_request.onreadystatechange=function()
+    {
+        if(http_request.readyState == 4)
+        {
+            //javascript function JSON.parse to parse json data
+            var jsonObj=JSON.parse(http_request.responseText);
+            //jsonObj variable now contains the data structure and can be accessed as jsonObj.name and
+            //jsonObj.country
+            //for(let i in jsonObj)
+         //   { 
+            document.getElementById("Userid").innerHTML=jsonObj[0].userid;
+            document.getElementById("Id").innerHTML=jsonObj[0].id;
+            document.getElementById("Title").innerHTML=jsonObj[0].title;
+            document.getElementById("Completed").innerHTML=jsonObj[0].completed;
+            
+        //    }
+           
+        }
+    }
+    http_request.open("GET",data_file,true);
+    http_request.send();
+}
+</script>
+<title>Try json</title>
+</head>
+<body>
+<h1>Animal details</h1>
+<table class="src">
+<tr>
+<th>Userid</th><th>Id</th>
+<th>Title</th><th>Completed</th>
+    </tr>
+<tr><td><div id="Userid">aa</div></td>
+<td><div id="Id">bb</div></td>
+<td><div id="Title">cc</div></td>
+<td><div id="Completed">dd</div></td>
+</tr>
+</table>
+<div class="central">
+<button type="button" onclick="loadJSON()">Details</button>
+</div>
+</body>
+</html>

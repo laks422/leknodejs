@@ -1,0 +1,13 @@
+.boxed {
+    border: 1px solid blue ;
+  } 
+  body
+  {
+      background-color:green;
+    }
+    h1,h3
+    {text-align: center;}
+    .button {text-align: center;
+
+    }
+    .div{text-align: center;}

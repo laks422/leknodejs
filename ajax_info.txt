@@ -1,0 +1,1 @@
+AJAX is not a programming language.It is a combination of asynchronous javascript and XML..
